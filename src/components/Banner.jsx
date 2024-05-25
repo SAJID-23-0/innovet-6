@@ -14,8 +14,8 @@ const Banner = () => {
           use technology for growing business.
         </p>
         <div className="flex gap-7 justify-center">
-          <Button title={"Get Free Quoto"} />
-          <Button title={"Learn More"} />
+          <Button title="Get Free Quoto" />
+          <Button title="Learn More" />
         </div>
       </div>
     </section>

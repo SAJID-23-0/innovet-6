@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className=" py-5 bg-[rgba(22,12,109,0.8)] absolute top-0 left-0 w-full z-50">
       <div className="container ">
-        <div className="flex items-center">
-          <div className=" w-1/5">
+        <div className="flex items-center justify-between">
+          <div>
             <img src="/Logo.png" alt="Logo" />
           </div>
           <div className=" w-3/5  ">
@@ -61,7 +61,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/5">
+          <div>
             <Button title="Contact Us" />
           </div>
         </div>
