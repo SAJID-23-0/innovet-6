@@ -1,8 +1,8 @@
-import React from "react";
-
-const Button = ({ title }) => {
+const Button = ({ title, color }) => {
   return (
-    <button className=" py-3 px-7 font-open text-lg font-bold capitalize text-white border-2 border-brand rounded-full hover:bg-brand transition-all ">
+    <button
+      className={`${color} py-3 px-7 font-open text-lg font-bold capitalize hover:text-white border-2 border-brand rounded-full hover:bg-brand transition-all`}
+    >
       {title}
     </button>
   );

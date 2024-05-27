@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 
 const Banner = () => {
@@ -14,8 +13,8 @@ const Banner = () => {
           use technology for growing business.
         </p>
         <div className="flex gap-7 justify-center">
-          <Button title="Get Free Quoto" />
-          <Button title="Learn More" />
+          <Button title="Get Free Quoto" color="text-white" />
+          <Button title="Learn More" color="text-white" />
         </div>
       </div>
     </section>

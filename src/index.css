@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .counteritems div {
+  @apply border-r-[#4f585f61] border-r-4;
+}
+.counteritems div:last-child {
+  @apply border-none;
+} */

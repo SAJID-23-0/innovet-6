@@ -62,7 +62,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <Button title="Contact Us" />
+            <Button title="Contact Us" color="text-white" />
           </div>
         </div>
       </div>
