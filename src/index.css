@@ -10,3 +10,7 @@
 .counteritems div:last-child {
   @apply border-none;
 } */
+
+.basic {
+  @apply text-2xl font-medium font-poppins;
+}

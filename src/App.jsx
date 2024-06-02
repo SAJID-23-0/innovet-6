@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Blog from "./components/Blog";
 import ChooseUs from "./components/ChooseUs";
 import Gallary from "./components/Gallary";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,7 @@ function App() {
       <WeCreat />
       <RightPlan />
       <Testimonial />
+      <Blog />
     </>
   );
 }

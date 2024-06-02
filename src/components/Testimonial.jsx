@@ -1,22 +1,9 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
-function SampleNextArrow({ className, onClick }) {
-  return (
-    <div className={className} onClick={onClick}>
-      <FaChevronRight />
-    </div>
-  );
-}
-
-function SamplePrevArrow({ className, onClick }) {
-  return (
-    <div className={className} onClick={onClick}>
-      <FaChevronLeft />
-    </div>
-  );
-}
+import Testimonialitems from "./Testimonialitems";
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
 
 const Testimonial = () => {
   const settings = {
@@ -24,26 +11,44 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
   return (
-    <section className="py-24">
+    <section className="py-24 bg-[#F8F8FF]">
       <div className="container">
-        <h2 className="text-[#141135] font-open font-bold text-5xl text-center">
+        <h2 className="text-[#141135] font-open font-bold text-5xl text-center  mb-20">
           What The People Thinks About Us
         </h2>
 
         <Slider {...settings}>
-          <div>
-            <img src="/testimonial card.png" alt="" />
-          </div>
-          <div>
-            <img src="/testimonial card.png" alt="" />
-          </div>
-          <div>
-            <img src="/testimonial card.png" alt="" />
-          </div>
+          <Testimonialitems
+            src="/testimonial img.png"
+            title="Ceo And Head Of Idea"
+            name="Lukan Depina"
+          >
+            Lesser Replenish bearing they’re him cattle kind dominion. You which
+            fill place. Land she’d subdue divided gathering blessed seasons it.
+            Without, wherein days.
+          </Testimonialitems>
+          <Testimonialitems
+            src="/testimonial img.png"
+            title="Ceo And Head Of Idea"
+            name="Lukan Depina"
+          >
+            Lesser Replenish bearing they’re him cattle kind dominion. You which
+            fill place. Land she’d subdue divided gathering blessed seasons it.
+            Without, wherein days.
+          </Testimonialitems>
+          <Testimonialitems
+            src="/testimonial img.png"
+            title="Ceo And Head Of Idea"
+            name="Lukan Depina"
+          >
+            Lesser Replenish bearing they’re him cattle kind dominion. You which
+            fill place. Land she’d subdue divided gathering blessed seasons it.
+            Without, wherein days.
+          </Testimonialitems>
         </Slider>
       </div>
     </section>
