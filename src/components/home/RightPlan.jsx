@@ -5,10 +5,10 @@ const RightPlan = () => {
   return (
     <section className="py-24 bg-[#F9F9FB]">
       <div className="container">
-        <h2 className="text-[#141135] font-open font-bold text-5xl text-center mb-16">
+        <h2 className="text-[#141135] font-open font-bold sm:text-5xl text-center mb-16">
           Choose The Right Plan
         </h2>
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
           <RightPlanitems
             title="Basic"
             src="/rightplan emoji 1.png"

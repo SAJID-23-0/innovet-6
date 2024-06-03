@@ -2,7 +2,7 @@ import { LuDollarSign } from "react-icons/lu";
 
 const RightPlanitems = ({ title, src, price }) => {
   return (
-    <div className="w-[370px] h-[561px] bg-white text-[#141135] rounded-3xl hover:bg-[#6B62C5] hover:text-white">
+    <div className="sm:w-[370px] h-[561px] bg-white text-[#141135] rounded-3xl hover:bg-[#6B62C5] hover:text-white">
       <div className="flex flex-col justify-center items-center">
         <h3 className="font-open font-bold text-3xl mt-14">{title}</h3>
         <img src={src} alt="rightplan emoji" className=" mt-6 mb-5" />

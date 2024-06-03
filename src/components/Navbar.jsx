@@ -1,5 +1,6 @@
 import { FaChevronDown } from "react-icons/fa";
-import Button from "./Button";
+import Button from "./home/Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,20 +13,26 @@ const Navbar = () => {
           <div className=" w-3/5  ">
             <ul className="text-white flex gap-10 items-center justify-center">
               <li>
-                <a className="flex items-center gap-2 group transition-all">
+                <Link
+                  to="/"
+                  className="flex items-center gap-2 group transition-all"
+                >
                   <span className="group-hover:text-brand font-open text-lg font-semibold">
                     Home
                   </span>
                   <FaChevronDown className=" text-xs" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="flex items-center gap-2 group transition-all">
+                <Link
+                  to="about"
+                  className="flex items-center gap-2 group transition-all"
+                >
                   <span className="group-hover:text-brand font-open text-lg font-semibold">
                     About
                   </span>
                   <FaChevronDown className=" text-xs" />
-                </a>
+                </Link>
               </li>
               <li>
                 <a className="flex items-center gap-2 group transition-all">

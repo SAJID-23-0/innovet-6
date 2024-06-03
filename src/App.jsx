@@ -1,27 +1,48 @@
-import Banner from "./components/Banner";
-import Blog from "./components/Blog";
-import ChooseUs from "./components/ChooseUs";
-import Gallary from "./components/Gallary";
-import Navbar from "./components/Navbar";
-import RightPlan from "./components/RightPlan";
-import Testimonial from "./components/Testimonial";
-import WeCreat from "./components/WeCreat";
-import WhatWeDo from "./components/WhatWeDo";
+import Layouts from "./components/Layouts";
+import About from "./pages/About";
+import Home from "./pages/Home";
+
+// =========== element ======
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+// =========== element ======
+
+// =========== object ======
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// =========== object ======
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Banner />
-      <Gallary />
-      <ChooseUs />
-      <WhatWeDo />
-      <WeCreat />
-      <RightPlan />
-      <Testimonial />
-      <Blog />
-    </>
+  // ===== element ============
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layouts />}>
+        <Route index element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+      </Route>
+    )
   );
+  // ===== element ============
+  // ===== object ============
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <Layouts />,
+  //   },
+  //   {
+  //     path: "index",
+  //     element: <Home />,
+  //   },
+  //   {
+  //     path: "/about",
+  //     element: <About />,
+  //   },
+  // ]);
+  // ===== object ============
+  return <RouterProvider router={router} />;
 }
 
 export default App;

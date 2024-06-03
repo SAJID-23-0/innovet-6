@@ -12,15 +12,15 @@ const WeCreat = () => {
         />
       </div>
       <div className="container">
-        <h2 className="text-[#141135] font-open font-bold text-5xl text-center">
+        <h2 className="text-[#141135] font-open font-bold md:text-5xl text-center">
           We create real impact
         </h2>
-        <p className="text-[#726E9E] font-poppins font-normal text-lg w-[579px] text-center m-auto mt-6 mb-[75px]">
+        <p className="text-[#726E9E] font-poppins font-normal text-lg w-full sm:w-[579px] text-center m-auto mt-6 mb-[75px]">
           We design, build and support websites and apps for clients worldwide.
           Create beautiful, eye-catching on-page messages without the need for a
           developer.
         </p>
-        <div className="flex gap-36">
+        <div className="md:flex gap-36">
           <div>
             <WecreateItems
               title="Competitive analysis"

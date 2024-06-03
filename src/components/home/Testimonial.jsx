@@ -17,7 +17,7 @@ const Testimonial = () => {
   return (
     <section className="py-24 bg-[#F8F8FF]">
       <div className="container">
-        <h2 className="text-[#141135] font-open font-bold text-5xl text-center  mb-20">
+        <h2 className="text-[#141135] font-open font-bold sm:text-5xl text-center  mb-20">
           What The People Thinks About Us
         </h2>
 

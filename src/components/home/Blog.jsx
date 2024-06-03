@@ -5,17 +5,17 @@ const Blog = () => {
     <section className=" py-24 relative">
       <div className="container">
         <div className=" w-fit m-auto">
-          <h2 className="text-[#141135] font-open font-bold text-5xl mb-16">
+          <h2 className="text-[#141135] font-open font-bold sm:text-5xl mb-16">
             You May Also Like
           </h2>
           <BlogItems src="/blog img 1.png" className=" mb-14">
             Punto Pago Allows Quick And Secure Payments For Services In Panama
           </BlogItems>
           <BlogItems src="/blog img 1.png" className=" mb-14">
-            Punto Pago Allows Quick And Secure Payments For Services In Panama
+            The User Can Also Replenish A Balance Make Remittances
           </BlogItems>
           <BlogItems src="/blog img 1.png">
-            Punto Pago Allows Quick And Secure Payments For Services In Panama
+            The User Can Also Replenish A Balance Make Remittances
           </BlogItems>
         </div>
       </div>

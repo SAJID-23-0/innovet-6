@@ -1,6 +1,6 @@
 const BlogItems = ({ src, children, className }) => {
   return (
-    <div className={`flex gap-20 ${className}`}>
+    <div className={`md:flex gap-20 ${className}`}>
       <div>
         <img src={src} alt="blog img" />
       </div>
@@ -19,7 +19,7 @@ const BlogItems = ({ src, children, className }) => {
             <a className="hover:text-brand cursor-pointer">5 Hours Ago </a>
           </li>
         </ul>
-        <h3 className="text-3xl text-[#141135] font-open font-bold w-[550px] leading-10 mt-4 mb-5">
+        <h3 className="text-3xl text-[#141135] font-open font-bold w-full sm:w-[550px] leading-10 mt-4 mb-5">
           {children}
         </h3>
         <a
