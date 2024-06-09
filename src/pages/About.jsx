@@ -1,5 +1,10 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import React, { useEffect, useState } from "react";
+
+import { useSelector } from "react-redux";
+import DecrementCom from "../components/DecrementCom";
+import IncrementCom from "../components/IncrementCom";
+
+// import axios from "axios";
 const About = () => {
   // let [count, setCount] = useState(0);
   // let [count2, setCount2] = useState(0);
@@ -14,17 +19,20 @@ const About = () => {
   //   document.title = count;
   //   console.log("render");
   // }, [count]);
-  let [user, setuser] = useState([]);
-  useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-      setuser(res.data);
-    });
-  }, []);
-  console.log(user);
+  // let [user, setuser] = useState([]);
+  // useEffect(() => {
+  //   axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
+  //     setuser(res.data);
+  //   });
+  // }, []);
+  // console.log(user);
+
+  const data = useSelector((state) => state.counter.value);
   return (
-    <div className="m-36">
-      <h1>REACT HOOKS</h1>
-      {/* <div>
+    <>
+      {/* // <div className="m-36">
+    //   <h1>REACT HOOKS</h1>
+      <div>
         <button onClick={handelclick} className="text-6xl">
           1st +
         </button>
@@ -35,8 +43,8 @@ const About = () => {
           2nd +
         </button>
         <h2 className="text-6xl">{count2}</h2>
-      </div> */}
-      {user.map((item) => (
+      </div>
+    //   {user.map((item) => (
         <div key={item.id} className="card">
           <div className="profileImage">
             <img src="" alt="profile" />
@@ -49,7 +57,13 @@ const About = () => {
           </div>
         </div>
       ))}
-    </div>
+    </div> */}
+      <div className="m-36">
+        <IncrementCom />
+        <h1>{data}</h1>
+        <DecrementCom />
+      </div>
+    </>
   );
 };
 
